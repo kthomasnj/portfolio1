@@ -52,11 +52,14 @@ body {
 }
 
 /****************************** NAVBAR **********************************/
+
+nav {
+  z-index: 2;
+}
+
 .logo {
   width: 16.25rem;
 }
-
-
 
 /*------------- MENU LINKS ---------------*/
 nav a.nav-link {
@@ -160,4 +163,19 @@ nav ul li {
   padding: 0.625rem 0.75rem 0.75rem 0.75rem;
   color: var(--primary-white);
   margin: 2rem;
+}
+
+.btn-main-offer:hover {
+  text-decoration: none;
+  background-color: var(--primary-hover-red);
+  transition: .2s ease-in-out;
+}
+
+/****************************** PARTICLES JS **********************************/
+
+.tsparticles-canvas-el {
+  position: absolute;
+  height: 100vh;
+  width: 100vh;
+  z-index: 1;
 }
