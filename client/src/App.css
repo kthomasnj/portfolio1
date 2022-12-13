@@ -48,7 +48,7 @@
 }
 
 body {
-  font-family: "Roboto Condensed", sans-serif;
+  font-family: "Roboto Condesed", sans-serif;
 }
 
 /****************************** NAVBAR **********************************/
@@ -102,15 +102,20 @@ nav ul li {
 
 .main-info {
   display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  font-family: "Roboto Condensed", sans-serif;
+  font-family: "Roboto Condesed", sans-serif;
 }
 
 .main-info h1 {
-  color: var(--primary-orange);
+  color: black;
   text-transform: uppercase;
 }
 
@@ -137,4 +142,22 @@ nav ul li {
 /****************************** HAMBURGER MENU **********************************/
 .h-menu {
   color: var(--primary-white) !important;
+}
+
+/****************************** TYPED TEXT **********************************/
+
+.typed-text {
+  font-size: 2rem;
+  color: var(--primary-white);
+}
+
+/****************************** HEADER MAIN OFFER BUTTON **********************************/
+
+.btn-main-offer {
+  border: 1px solid var(--primary-red);
+  text-transform: uppercase;
+  border-radius: 0;
+  padding: 0.625rem 0.75rem 0.75rem 0.75rem;
+  color: var(--primary-white);
+  margin: 2rem;
 }
